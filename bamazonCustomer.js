@@ -4,6 +4,8 @@ const inquirer = require('inquirer');
 
 const Table = require('cli-table');
 
+const secret = require('./password');
+
 const connection = mysql.createConnection({
     host: "localhost",
   
@@ -14,7 +16,7 @@ const connection = mysql.createConnection({
     user: "root",
   
     // Your password
-    password: "Powerade.1",
+    password: secret.password,
     database: "bamazon"
 });
 
