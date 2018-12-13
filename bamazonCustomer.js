@@ -4,7 +4,7 @@ const inquirer = require('inquirer');
 
 const Table = require('cli-table');
 
-const secret = require('./password');
+const secret = require('./ignored/password.js');
 
 const connection = mysql.createConnection({
     host: "localhost",
