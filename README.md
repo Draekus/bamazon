@@ -17,8 +17,22 @@ Next you will need to go to the root directory of the bamazon install and create
 
 ```JS
 let secret = {
-    password: 'Powerade.1'
+    password: 'Your password here'
 }
 
 module.exports = secret;
 ```
+
+## Starting The App
+In order to start the app you will need to open up Terminal (Mac) or Gitbash (Windows) and navigate to the root directory of bamazon. You will then need to type 'node bamazonCustomer' or 'node bamazonManager' or 'node bamazonSupervisor' to open up each version of the app respectively.
+
+## Customer App
+When you initially open the customer app you will be shown a table of the products, their ID, their prices, amount in stock etc. In order to make a purchase you will need to enter the ID of the product that you want.
+
+![](images/productid.png)
+
+You will then need to enter quantity you would like to purchase. Make sure it is equal or less than the stock available. You will then be shown your order invoice with the total cost.
+
+![](images/invoice.png)
+
+## Manager App
