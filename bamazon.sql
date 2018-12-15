@@ -41,3 +41,6 @@ values ('MSI Gaming Intel B250 Motherboard', 'Computer Hardware','120', '135');
 insert into bamazon.products (product_name, department_name, price, stock_quantity) 
 values ('Capri Sun Fruit Punch 10 Pack', 'Food & Drinks', '15', '56');
 
+update bamazon.products
+set stock_quantity = 3
+where id = 3;
