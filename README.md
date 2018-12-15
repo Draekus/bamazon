@@ -40,6 +40,14 @@ You will then need to enter quantity you would like to purchase. Make sure it is
 ![](images/invoice.png)
 
 ## Manager App
-Upon opening the manager app you will be prompted with 4 question. Use the arrow keys to navigate the choices and hit enter to make a selection. View Prodcts will show you all the available stock just like the customer app. View low inventory will show you all the products that have a stock of less than 5.
+Upon opening the manager app you will be prompted with 4 question. Use the arrow keys to navigate the choices and hit enter to make a selection. 
+
+![](images/manager_menu.png)
+
+View Prodcts will show you all the available stock just like the customer app. View low inventory will show you all the products that have a stock of less than 5.
 
 ![](images/low.png)
+
+Add to Inventory will allow you to add additional units to the stock of a currently existing product while Add New Product will allow you to add an entirely new product to the database.
+
+![](images/add.png)
