@@ -1,6 +1,6 @@
 # Bamazon
 
-Bamazon is a node app that imitates a retail inventory system. It has a customer app, a manager app, and a supervisor app that each provide more and more detailed information about the "store's" inventory and sales.
+Bamazon is a node app that imitates a retail inventory system. It has a customer app and a manager app that each provide more and more detailed information about the "store's" inventory and sales.
 
 ## Requirements
 - [Node.js](https://nodejs.org/en/download/) 
@@ -23,8 +23,12 @@ let secret = {
 module.exports = secret;
 ```
 
+Next you will need to open up MySQL Workbench and open up 'bamazon.sql'. Run the file in order to generate the database.
+
+![](images/mysql.png)
+
 ## Starting The App
-In order to start the app you will need to open up Terminal (Mac) or Gitbash (Windows) and navigate to the root directory of bamazon. You will then need to type 'node bamazonCustomer' or 'node bamazonManager' or 'node bamazonSupervisor' to open up each version of the app respectively.
+In order to start the app you will need to open up Terminal (Mac) or Gitbash (Windows) and navigate to the root directory of bamazon. You will then need to type 'node bamazonCustomer' or 'node bamazonManager' to open up each version of the app respectively.
 
 ## Customer App
 When you initially open the customer app you will be shown a table of the products, their ID, their prices, amount in stock etc. In order to make a purchase you will need to enter the ID of the product that you want.
@@ -36,3 +40,6 @@ You will then need to enter quantity you would like to purchase. Make sure it is
 ![](images/invoice.png)
 
 ## Manager App
+Upon opening the manager app you will be prompted with 4 question. Use the arrow keys to navigate the choices and hit enter to make a selection. View Prodcts will show you all the available stock just like the customer app. View low inventory will show you all the products that have a stock of less than 5.
+
+![](images/low.png)

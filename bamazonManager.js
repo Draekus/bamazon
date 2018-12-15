@@ -46,7 +46,7 @@ function showInventory(query) {
             );
 
         }
-        console.log('\n\n' + table.toString() + `\n\n\n\n`);
+        console.log('\n\n' + table.toString() + `\n\n\n\n\n\n`);
         
     });
 }
@@ -58,12 +58,20 @@ function addInventory() {
         {
             type: 'input',
             name: 'id',
-            message: 'What is the ID of the product you would like to update?'
+            message: 'What is the ID of the product you would like to update?',
+            validate: function (value) {
+                var valid = !isNaN(parseFloat(value));
+                return valid || 'Please enter a number';
+            }
         },
         {
             type: 'input',
             name: 'quantity',
-            message: 'How many units would you like to add to the inventory?'
+            message: 'How many units would you like to add to the inventory?',
+            validate: function (value) {
+                var valid = !isNaN(parseFloat(value));
+                return valid || 'Please enter a number';
+            }
         }
       
     ]) 

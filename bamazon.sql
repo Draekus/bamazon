@@ -42,5 +42,5 @@ insert into bamazon.products (product_name, department_name, price, stock_quanti
 values ('Capri Sun Fruit Punch 10 Pack', 'Food & Drinks', '15', '56');
 
 update bamazon.products
-set stock_quantity = 3
-where id = 3;
+set product_name = 'Oranges', department_name = 'Food & Drinks', price = 2, stock_quantity = 5
+where id = 12;
